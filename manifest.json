@@ -1,12 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "New Tab Opener",
+  "name": "Shopify Admin Redirect",
   "version": "1.0",
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "popup.html",
     "default_icon": "shopify_icon.png"
   },
   "background": {
@@ -20,5 +17,9 @@
   ],
   "host_permissions": [
     "<all_urls>"
-  ]
+  ],
+  "web_accessible_resources": [{
+    "resources": ["url_builder.js"],
+    "matches": ["<all_urls>"]
+  }]
 }
