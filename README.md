@@ -1,6 +1,6 @@
 # Shopify Admin Redirect Chrome Extension
 
-A silly little extension that allows you to click a button when on a Shopify storefront `product`, `collection`, or `page` page and it will take you to the admin page.
+A silly little extension that allows you to click a button when on a Shopify storefront `product`, `collection`, `page`, `blog`, or `policy` page, and it will take you to the admin page.
 
 ## Installation
 
