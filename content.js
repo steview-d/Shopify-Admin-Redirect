@@ -17,4 +17,16 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 
     return true;
   }
+
+  if (message.action === 'fetchThemeSettingsUrl') {
+    const themeSettingsUrl = document.querySelector('theme-settings-url')
+      ? document.querySelector('theme-settings-url').textContent
+      : null;
+
+    sendResponse({
+      theme_settings_url: themeSettingsUrl
+    });
+
+    return true;
+  }
 });
